@@ -1,0 +1,7 @@
+# Prepros
+.config
+.html
+.css
+*.config
+*.html
+css/styles.css
