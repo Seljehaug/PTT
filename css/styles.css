@@ -353,6 +353,10 @@ img {
 .margin-top {
   margin-top: 80px; }
 
+@media (max-width: 700px) {
+  .margin-top {
+    margin-top: 60px; } }
+
 section:last-child {
   padding-bottom: 2rem; }
 
