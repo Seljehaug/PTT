@@ -3,6 +3,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS. */
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,400i,700");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -293,19 +294,13 @@ textarea {
   /* 2 */ }
 
 * {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 
 body {
-  font-size: 100%;
-  background: #F9F9F9; }
+  font-size: 100%; }
 
 h1, h2, h3, h4 {
-  text-transform: uppercase;
-  color: #006A8E; }
+  text-transform: uppercase; }
 
 h1 {
   font-size: 2.5rem; }
@@ -336,14 +331,11 @@ a {
   a:hover {
     text-decoration: underline; }
 
-img {
-  width: 100%; }
-
-.big {
-  font-size: 1.5rem; }
-
 .bold, b {
   font-weight: 700; }
+
+img {
+  width: 100%; }
 
 .center {
   text-align: center; }
