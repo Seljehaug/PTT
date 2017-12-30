@@ -420,7 +420,19 @@ section:last-child {
     #menu-normal .nav-link:last-child {
       margin-right: 0; }
     #menu-normal .nav-link:hover {
-      font-weight: 700; }
+      color: #2B8CBA; }
+  #menu-normal .nav-link.active {
+    margin-top: 0.2rem; }
+    #menu-normal .nav-link.active::after {
+      position: relative;
+      top: 0.2rem;
+      content: "";
+      display: block;
+      height: 2px;
+      background: #324a94;
+      width: 100%; }
+  #menu-normal .nav-link.active:hover {
+    color: #324a94; }
 
 @media (max-width: 1150px) {
   #menu .logo-wrapper {

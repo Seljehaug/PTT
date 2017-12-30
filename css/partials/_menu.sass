@@ -41,13 +41,23 @@
 			margin-right: 0
 
 		&:hover
-			// color: $light-blue
-			font-weight: 700
+			color: $light-blue
 
 	.nav-link.active
-		// color: $light-blue
+		// border-bottom: 2px solid $dark-blue
 		// font-weight: 700
 		// font-size: 0.9rem
+		margin-top: 0.2rem
+		&::after
+			position: relative
+			top: 0.2rem
+			content: ""
+			display: block
+			height: 2px
+			background: $dark-blue
+			width: 100%
+	.nav-link.active:hover
+		color: $dark-blue
 
 @media(max-width: 1150px)
 	#menu .logo-wrapper
