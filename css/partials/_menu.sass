@@ -6,6 +6,7 @@
 	right: 0
 	z-index: 100
 	background: $white
+	border-bottom: 1px solid #f0f0f0
 
 	nav
 		display: flex
@@ -30,7 +31,7 @@
 		text-decoration: none
 		margin-right: 1rem
 		text-transform: uppercase
-		color: $dark-blue
+		color: $gray
 		font-size: 0.8rem
 		letter-spacing: 0.05rem
 		// font-weight: 700
@@ -47,17 +48,19 @@
 		// border-bottom: 2px solid $dark-blue
 		// font-weight: 700
 		// font-size: 0.9rem
-		margin-top: 0.2rem
-		&::after
-			position: relative
-			top: 0.2rem
-			content: ""
-			display: block
-			height: 2px
-			background: $dark-blue
-			width: 100%
-	.nav-link.active:hover
-		color: $dark-blue
+		color: $light-blue
+
+	// 	margin-top: 0.2rem
+	// 	&::after
+	// 		position: relative
+	// 		top: 0.2rem
+	// 		content: ""
+	// 		display: block
+	// 		height: 2px
+	// 		background: $dark-blue
+	// 		width: 100%
+	// .nav-link.active:hover
+	// 	color: $dark-blue
 
 @media(max-width: 1150px)
 	#menu .logo-wrapper
@@ -76,7 +79,6 @@
 	right: 0
 	bottom: 0
 	height: 100vh
-	min-width: 200px
 	transform: translateX(100%)
 	transition: transform 0.3s ease-in-out
 	background: $dark-blue
@@ -86,6 +88,7 @@
 		flex-direction: column
 		padding: 0 1rem 0 1rem
 		margin-top: 5rem
+		text-align: center
 
 	.nav-link
 		color: $white
@@ -119,7 +122,6 @@
 	#menu-mobile
 		display: block
 
-
 @media(max-width: 700px)
 	#menu
 		nav
@@ -136,5 +138,10 @@
 	#menu-mobile .menu-content
 		margin-top: 4rem
 
-// @media(min-width: 700px) and (max-width: 1050px)
-// 	#menu-mobile
+@media(min-width: 500px) and (max-width: 1050px)
+	#menu-mobile
+		min-width: 300px
+
+@media(max-width: 500px)
+	#menu-mobile
+		min-width: 200px

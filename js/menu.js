@@ -23,7 +23,7 @@ $(function(){
 			menu.addClass('active');
 			// $('body, html').css('overflow', 'hidden');
 			$('.toggle-menu .menu-icon').css('background-image', 'url("img/icons/close-white.svg")');
-			toggle.css({'left': '1rem', 'transition': 'left 0.15s ease-in-out'});
+			toggle.css({'left': '2rem', 'transition': 'left 0.15s ease-in-out'});
 		}
 	});
 
