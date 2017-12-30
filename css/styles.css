@@ -415,13 +415,12 @@ section:last-child {
     color: #324a94;
     font-size: 0.8rem;
     letter-spacing: 0.05rem;
-    font-weight: 700;
     padding: 0.25rem;
     font-family: "Lato", sans-serif; }
     #menu-normal .nav-link:last-child {
       margin-right: 0; }
     #menu-normal .nav-link:hover {
-      color: #2B8CBA; }
+      font-weight: 700; }
 
 @media (max-width: 1150px) {
   #menu .logo-wrapper {
@@ -506,14 +505,9 @@ section:last-child {
     margin-top: 4rem; } }
 
 footer {
-  display: none;
-    display-position: fixed;
-    display-left: 0;
-    display-bottom: 0;
-    display-width: 100%;
-    display-background-color: #2A2A2A;
-    display-color: white;
-    display-text-align: center; }
+  background-color: #2A2A2A;
+  color: white;
+  text-align: center; }
 
 .footer-logo {
   max-height: 100px;

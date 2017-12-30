@@ -11,3 +11,5 @@ prepros-6.config
 *.html
 prepros-6.config
 *.config
+*.css
+index.html
