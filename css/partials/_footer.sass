@@ -1,21 +1,50 @@
 .footer
-    // position: fixed
-    // left: 0
-    // bottom: 0
     width: 100%
-    background-color: $gray
+    background-color: lighten($gray, 5%)
     color: white
     text-align: center
     padding-top: 40px
+    a
+        color: darken( $white, 20%)
+        text-decoration: underline
+    a:active,
+    a:hover
+        color: $white
+    a:visited
+        text-decoration: none
 
-.footer-img
-    width: 200px
-    height: auto
+.footer-content
+    max-width: 1200px
+    margin: auto
 
+//LEFT 1/3
+.footer-description
+    text-align: left
+
+
+//Footer contact-list
+.footer-info-list
+    list-style-type: none
+    padding-left: 0px
+    .footer-info-list-item
+        text-align: center
+        width: 50px
+        a
+            color: white
+            i
+                padding: 5px
+                width: 18px
+                text-align: center
+                span
+                    padding-left: 20px
+                    white-space: nowrap
+
+
+// Copyright-bar in footer
 .footer-copyright
     background-color: darken( $gray, 5%)
-    padding-top: 20px
-    padding-bottom: 20px
+    padding-top: 1px
+    padding-bottom: 1px
 
 .copyright-left
     float: left
@@ -27,9 +56,9 @@
 .copyright-right
     margin-bottom: 0px
     padding: 20px
+    color: darken( $white, 20%)
+    font-size: 0.8rem
 
-.footer-info-list
-    list-style-type: none
-
-.footer-info-list-item
-    text-align: left
+.footer-img
+    width: 100px
+    height: auto
