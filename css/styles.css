@@ -393,7 +393,8 @@ section:last-child {
   left: 0;
   right: 0;
   z-index: 100;
-  background: #fcfcfc; }
+  background: #fcfcfc;
+  border-bottom: 1px solid #f0f0f0; }
   #menu nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -422,7 +423,7 @@ section:last-child {
     text-decoration: none;
     margin-right: 1rem;
     text-transform: uppercase;
-    color: #324a94;
+    color: #2A2A2A;
     font-size: 0.8rem;
     letter-spacing: 0.05rem;
     padding: 0.25rem;
@@ -432,17 +433,7 @@ section:last-child {
     #menu-normal .nav-link:hover {
       color: #2B8CBA; }
   #menu-normal .nav-link.active {
-    margin-top: 0.2rem; }
-    #menu-normal .nav-link.active::after {
-      position: relative;
-      top: 0.2rem;
-      content: "";
-      display: block;
-      height: 2px;
-      background: #324a94;
-      width: 100%; }
-  #menu-normal .nav-link.active:hover {
-    color: #324a94; }
+    color: #2B8CBA; }
 
 @media (max-width: 1150px) {
   #menu .logo-wrapper {
@@ -458,7 +449,6 @@ section:last-child {
   right: 0;
   bottom: 0;
   height: 100vh;
-  min-width: 200px;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
   transform: translateX(100%);
@@ -477,7 +467,8 @@ section:last-child {
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 0 1rem 0 1rem;
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    text-align: center; }
   #menu-mobile .nav-link {
     color: #fcfcfc;
     text-transform: uppercase;
@@ -526,11 +517,21 @@ section:last-child {
   #menu-mobile .menu-content {
     margin-top: 4rem; } }
 
+<<<<<<< HEAD
 .index-section-1 {
   background-color: #2B8CBA; }
 
 .test {
   background-color: red; }
+=======
+@media (min-width: 500px) and (max-width: 1050px) {
+  #menu-mobile {
+    min-width: 300px; } }
+
+@media (max-width: 500px) {
+  #menu-mobile {
+    min-width: 200px; } }
+>>>>>>> origin/master
 
 footer {
   background-color: #2A2A2A;
