@@ -360,6 +360,9 @@ img {
   min-height: 200px;
   display: inline-block; }
 
+.whitespace-nowrap {
+  white-space: nowrap; }
+
 .margin-top {
   margin-top: 80px; }
 
@@ -517,13 +520,6 @@ section:last-child {
   #menu-mobile .menu-content {
     margin-top: 4rem; } }
 
-<<<<<<< HEAD
-.index-section-1 {
-  background-color: #2B8CBA; }
-
-.test {
-  background-color: red; }
-=======
 @media (min-width: 500px) and (max-width: 1050px) {
   #menu-mobile {
     min-width: 300px; } }
@@ -531,7 +527,9 @@ section:last-child {
 @media (max-width: 500px) {
   #menu-mobile {
     min-width: 200px; } }
->>>>>>> origin/master
+
+.index-section-1 {
+  background-color: #2B8CBA; }
 
 footer {
   background-color: #2A2A2A;
