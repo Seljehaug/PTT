@@ -350,6 +350,16 @@ img {
   padding: 2rem 0 0;
   overflow: hidden; }
 
+.full-width-section {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  height: auto; }
+
+.two-column {
+  width: 50%;
+  min-height: 200px;
+  display: inline-block; }
+
 .margin-top {
   margin-top: 80px; }
 
@@ -515,6 +525,12 @@ section:last-child {
     top: 20px; }
   #menu-mobile .menu-content {
     margin-top: 4rem; } }
+
+.index-section-1 {
+  background-color: #2B8CBA; }
+
+.test {
+  background-color: red; }
 
 footer {
   background-color: #2A2A2A;
