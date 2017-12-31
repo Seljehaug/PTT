@@ -303,9 +303,6 @@ h1, h2, h3, h4, p, a {
   margin: 0;
   padding: 0; }
 
-h1, h2, h3, h4 {
-  text-transform: uppercase; }
-
 h1 {
   font-size: 2.5rem; }
 
