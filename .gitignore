@@ -18,4 +18,8 @@ css/styles.css
 *.html
 prepros-6.config
 *.css
+<<<<<<< HEAD
 prepros-6.config
+=======
+css/styles.css
+>>>>>>> origin/master

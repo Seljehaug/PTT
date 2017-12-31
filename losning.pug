@@ -3,8 +3,40 @@ html(lang="no")
 	head
 		title 
 		include includes/meta
-		// Ekstra ting her
+		script(src="js/collapsible-panels.js")
 			
 	body
 		include includes/menu
+		
+		.inner.margin-top
+			section.content-wrapper
+				p Content
+				
+			section.collapsible-panels-list.content-wrapper
+				.panel
+					.panel-header
+						p Click me
+					.panel-content
+						p Content here 
+				.panel
+					.panel-header
+						p Click me
+					.panel-content
+						p Content here 
+				.panel
+					.panel-header
+						p Click me
+					.panel-content
+						p Content here 
+				.panel
+					.panel-header
+						p Click me
+					.panel-content
+						p Content here 
+				.panel
+					.panel-header
+						p Click me
+					.panel-content
+						p Content here 
+						
 		include includes/footer

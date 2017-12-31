@@ -373,6 +373,18 @@ img {
 section:last-child {
   padding-bottom: 2rem; }
 
+.collapsible-panels-list .panel:nth-child(odd) {
+  background: grey; }
+
+.collapsible-panels-list .panel:nth-child(even) {
+  background: #dedede; }
+
+.collapsible-panels-list .panel-content {
+  display: none; }
+
+.collapsible-panels-list .panel-content.is-open {
+  display: block; }
+
 .icon {
   display: block;
   padding: 0;

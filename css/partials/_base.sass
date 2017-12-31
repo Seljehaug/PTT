@@ -38,3 +38,15 @@ img
 
 section:last-child
     padding-bottom: 2rem
+
+
+// Collapsible panels list
+.collapsible-panels-list
+	.panel:nth-child(odd)
+		background: grey
+	.panel:nth-child(even)
+		background: #dedede
+	.panel-content
+		display: none
+	.panel-content.is-open
+		display: block
