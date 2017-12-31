@@ -2,37 +2,51 @@ img
     width: 100%
 
 .center
-  text-align: center
+    text-align: center
 
 .inner
-  width: 90%
-  max-width: 1200px
-  margin: 0 auto
-  padding: 0
+    width: 90%
+    max-width: 1200px
+    margin: 0 auto
+    padding: 0
 
 .content-wrapper
-  padding: 2rem 0 0
-  overflow: hidden
+    padding: 2rem 0 0
+    overflow: hidden
 
+.full-width-section
+    width: 100vw
+    margin-left: calc(-50vw + 50%)
+    height: auto
+
+.two-column
+    width: 50%
+    min-height: 200px
+    display: inline-block
+
+.whitespace-nowrap
+    white-space: nowrap
+
+
+// Skal stemme overens med høyden til nav i menyen
 .margin-top
-  margin-top: 80px
+    margin-top: 80px
+
+@media(max-width: 700px)
+	.margin-top
+		margin-top: 60px
 
 section:last-child
-  padding-bottom: 2rem
+    padding-bottom: 2rem
 
-.icon
-  display: block
-  padding: 0
-  text-indent: -9999px
-  background-size: 100% 100%
-  background-position: center center
-  background-repeat: no-repeat
-  position: relative
-  &:hover
-    border-bottom: none
 
-.menu-icon
-  background-image: url("../img/icons/menu-blue.svg")
-
-.close-icon
-  background-image: url("../img/icons/close-white.svg")
+// Collapsible panels list
+.collapsible-panels-list
+	.panel:nth-child(odd)
+		background: grey
+	.panel:nth-child(even)
+		background: #dedede
+	.panel-content
+		display: none
+	.panel-content.is-open
+		display: block

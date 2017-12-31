@@ -1,0 +1,147 @@
+// --- menu ---
+#menu
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 100
+	background: $white
+	border-bottom: 1px solid #f0f0f0
+
+	nav
+		display: flex
+		flex-wrap: nowrap
+		height: 80px
+
+	.logo-wrapper
+		width: 170px
+		height: 80px
+		position: relative
+		top: -5px
+		left: -15px
+		a
+			display: inline-block
+
+#menu-normal
+	margin-left: auto
+	display: flex
+	align-items: center
+
+	.nav-link
+		text-decoration: none
+		margin-right: 1rem
+		text-transform: uppercase
+		color: $gray
+		font-size: 0.8rem
+		letter-spacing: 0.05rem
+		// font-weight: 700
+		padding: 0.25rem
+		font-family: $lato
+
+		&:last-child
+			margin-right: 0
+
+		&:hover
+			color: $light-blue
+
+	.nav-link.active
+		// border-bottom: 2px solid $dark-blue
+		// font-weight: 700
+		// font-size: 0.9rem
+		color: $light-blue
+
+	// 	margin-top: 0.2rem
+	// 	&::after
+	// 		position: relative
+	// 		top: 0.2rem
+	// 		content: ""
+	// 		display: block
+	// 		height: 2px
+	// 		background: $dark-blue
+	// 		width: 100%
+	// .nav-link.active:hover
+	// 	color: $dark-blue
+
+@media(max-width: 1150px)
+	#menu .logo-wrapper
+		width: 150px
+		top: 0
+
+	#menu-normal
+		.nav-link
+			margin-right: 0.5rem
+
+
+#menu-mobile
+	display: none
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	height: 100vh
+	transform: translateX(100%)
+	transition: transform 0.3s ease-in-out
+	background: $dark-blue
+
+	.menu-content
+		display: flex
+		flex-direction: column
+		padding: 0 1rem 0 1rem
+		margin-top: 5rem
+		text-align: center
+
+	.nav-link
+		color: $white
+		text-transform: uppercase
+		font-weight: 400
+		text-decoration: none
+		font-size: 1rem
+		margin-bottom: 1.25rem
+
+		span
+			display: block
+
+	.nav-link.active
+		font-weight: 700
+
+#menu .toggle-menu
+	position: relative
+	left: -27%
+	width: 25px
+	height: 15px
+	top: 30px
+	cursor: pointer
+
+#menu-mobile.active
+	transform: translateX(2%)
+	transition: transform 0.3s ease-in-out
+
+@media(max-width: 1050px)
+	#menu-normal
+		display: none
+	#menu-mobile
+		display: block
+
+@media(max-width: 700px)
+	#menu
+		nav
+			height: 60px
+
+		.logo-wrapper
+			width: 135px
+			height: 65px
+			top: -5px
+
+		.toggle-menu
+			top: 20px
+
+	#menu-mobile .menu-content
+		margin-top: 4rem
+
+@media(min-width: 500px) and (max-width: 1050px)
+	#menu-mobile
+		min-width: 300px
+
+@media(max-width: 500px)
+	#menu-mobile
+		min-width: 200px
