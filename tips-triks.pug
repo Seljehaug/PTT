@@ -4,7 +4,59 @@ html(lang="no")
 		title 
 		include includes/meta
 		// Ekstra ting her
-			
+		script(src="js/collapsible-panels.js")
 	body
 		include includes/menu
+		
+		.inner.margin-top
+					
+			section.content-wrapper
+				h2 Overskrift
+				p aliqua esse quem veniam velit anim veniam dolor malis export esse aliqua quem 
+					| anim fore ipsum nulla malis legam anim nisi velit quae legam enim legam tamen 
+					| illum labore aute export veniam elit duis tempor magna enim minim culpa dolore
+				p aliqua esse quem veniam velit anim veniam dolor malis export esse aliqua quem 
+					| anim fore ipsum nulla malis legam anim nisi velit quae legam enim legam tamen 
+					| illum labore aute export veniam elit duis tempor magna enim minim culpa dolore
+			section.collapsible-panels-list.content-wrapper
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Kompatible enheter
+					.panel-content
+						p Pttcommunication fungerer på alle iOS og Android-baserte mobiltelefoner. Kapasiteten 
+							| til dagens telefoner er varierende, og vi oppfordrer våre brukere til å restarte telefonen
+							| en gang i blant, optimalt en gang hver dag. Dette er for å "rengjøre" det interne minnet til telefonen. 
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Applikasjonen er treig 
+					.panel-content
+						p Antallet applikasjoner som kjører samtidig på telefonen påvirker hastigheten. For optimal ytelse, reduser mengden 
+							applikasjoner som kjører samtidig så mye som mulig. Spesielt radio-, musikk- og videoapplikasjoner kan ha påvirkning på ytelsen.
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Overskrift 
+					.panel-content
+						p tekst her
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Overskrift 
+					.panel-content
+						p tekst her
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Overskrift 
+					.panel-content
+						p tekst her
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Overskrift 
+					.panel-content
+						p tekst her
+
 		include includes/footer
