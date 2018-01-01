@@ -25,6 +25,17 @@ img
 section:last-child
     padding-bottom: 2rem
 
+//For making background full width while still maintaining inner for content. (Requires a div inside the class)
+
+.full-width-background
+    width: 100vw
+    margin-left: calc(-50vw + 50%)
+    height: auto
+    > div
+        width: 90%
+        max-width: 1200px
+        margin: 0 auto
+        padding: 0
 
 // --- two-cols ---
 .two-cols
