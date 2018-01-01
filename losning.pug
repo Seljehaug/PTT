@@ -4,7 +4,74 @@ html(lang="no")
 		title 
 		include includes/meta
 		// Ekstra ting her
-		script(src="collapsible-panels.js")
+		script(src="js/collapsible-panels.js")
 	body
 		include includes/menu
+		
+		.inner.margin-top
+					
+			section.collapsible-panels-list.content-wrapper
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Hvor lang er rekkevidden?
+					.panel-content
+						p Med vår løsning er det ingen begrensninger på rekkevidden. Så lenge brukeren har mobil eller 
+							| WIFI dekning er en tilgjengelig for samtale.
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Hvordan administrere løsning?
+					.panel-content
+						p GroupTalk-løsning styres fra et enkelt, men kraftig, nettbasert verktøy. Angi alle brukere 
+							| og relevante diskusjonsgrupper. Vi har valgt å koble brukere og støttegrupper sammen med 
+							| noe vi kaller tilgangsgruppene. Dette gjør det enkelt å slotte på brukerne og tildele ressurser 
+							| til bestemte prosjekter/oppgaver.
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Hva med eksisterende radionettverk/områder uten dekning?
+					.panel-content
+						p For kunder som allerede bruker toveisradio eller har personell på områder uten mobil- eller wifi-dekning, 
+							| kan en kombinasjon av mobil og analog / digitalt radionett være et alternativ. Vår løsning gjør det mulig, 
+							| og kan integrere radioer i løsningen og diskusjonsgruppene.
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Hvordan er sikkerheten
+					.panel-content
+						p GroupTalk meldinger er kryptert eller AES 256 standard
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Hvilke typer nettverk bruker GroupTalk?
+					.panel-content
+						p GroupTalk fungerer uavhengig og på tvers av mobiloperatører. Sømløs overgang mellom mobil- og WiFi-nettverk gjør det enkelt 
+							| å flytte mellom forskjellige miljøer. Hastighet brukes ofte mot PTT over mobil, men vi tror de fleste vil bli overrasket 
+							| over hastigheten på vår løsning på 3G / 4G og WiFi. I EDGE-baserte mobilnett kan forsinkelse oppleves, men akseptabelt 
+							| for de fleste.
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Lydkvalitet
+					.panel-content
+						p Vi har lagt mye arbeid på å sikre lydkvaliteten og tilbakemeldingene fra våre kunder er helt positive så langt. Vi har gjort 
+							| mye for å redusere linjestøy og sammen med moderne Smartphones og PTT tilbehør vil brukeren motta en PTT-opplevelse helt 
+							| i tråd med det man opplever med mobilsamtaler. 
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Hvor mye mobildata bruker systemet?
+					.panel-content
+						p Når du starter en samtale over PTT, sender appen en talestrøm på omtrent 15 Kbps, slik at totalt vil en melding innebære omtrent 
+							| 25 kbps, inkludert IP-overhead som sendes over nettverket. En 10-sekunders melding gir da ett datakonsum på ca. 30K, alt i alt, 
+							| derfor forbruker forbruket minimal
+				.panel
+					.panel-header
+						.icon.toggle-panel-icon Vis/skjul paneltekst
+						p Hvilke typer telefoner fungerer med GroupTalk?
+					.panel-content
+						p GroupTalk-løsning fungerer på Android-telefoner (ver 4.0.3 og senere) og Apple-telefoner (IOS ver 6.0 og senere). PC/Mac-klienter 
+							| er tilgjengelige for å involvere kontorpersonale i diskusjonsgruppene.
+
 		include includes/footer

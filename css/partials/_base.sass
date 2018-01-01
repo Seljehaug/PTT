@@ -25,13 +25,48 @@ img
 section:last-child
     padding-bottom: 2rem
 
-// Collapsible panels list
+// --- Collapsible panels list ---
 .collapsible-panels-list
-	.panel:nth-child(odd)
-		background: grey
-	.panel:nth-child(even)
-		background: #dedede
+	.panel
+		background: $light-gray
+		border: 1px solid #f0f0f0
+		cursor: pointer
+		margin-bottom: 1rem
+		&:hover
+			.panel-header
+				background: $dark-blue
+				color: $white
+
+				.toggle-panel-icon
+					background-image: url("../img/icons/arrow-right-offwhite.svg")
+	.panel-header
+		padding: 1rem
+		display: flex
+		align-content: center
+
+		.toggle-panel-icon
+			display: inline-block
+			width: 17px
+			height: 17px
+			position: relative
+			top: 3px
+
+		p
+			margin-left: 0.5rem
+
 	.panel-content
 		display: none
+		padding: 1rem
+		background: $white
+		border: 1px solid $dark-blue
+
 	.panel-content.is-open
 		display: block
+
+	.panel.active
+		.panel-header
+			background: $dark-blue
+			color: $white
+			.toggle-panel-icon
+				background-image: url("../img/icons/arrow-down-offwhite.svg")
+// end of collapsible-panels-list
