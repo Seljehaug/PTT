@@ -25,6 +25,22 @@ img
 section:last-child
     padding-bottom: 2rem
 
+
+// --- two-cols ---
+.two-cols
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+	> div
+		width: 48%
+
+@media(max-width: 750px)
+	.two-cols > div
+		width: 100%
+// end of two-cols
+
 // --- Collapsible panels list ---
 .collapsible-panels-list
 	.panel
