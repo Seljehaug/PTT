@@ -41,12 +41,33 @@ section:last-child
 		width: 100%
 // end of two-cols
 
+// --- three-cols ---
+.three-cols
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+
+	div
+		width: 32%
+
+@media(max-width: 750px)
+	.three-cols > div
+		width: 100%
+		padding-bottom: 2rem
+
+		&:last-child
+			padding-bottom: 0
+// end of three-cols
+
+// --- text-left-img-right ---
 @media(max-width: 900px)
 	.text-left-img-right
 		div
 			width: 100%
 		div:first-child
 			margin-bottom: 1rem
+// end of text-left-img-right
 
 // --- Collapsible panels list ---
 .collapsible-panels-list
