@@ -28,11 +28,14 @@ $(function(){
 	});
 
 	// Active state in menu
-	var loc = window.location.href; // returns the full URL
-	var url_parts = loc.split('/');
-	var current_page = url_parts.pop() || url_parts.pop(); // handle potential trailing slash
-	var selector = '#menu-normal a[href*="' + current_page + '"]';
+	var current_page = window.location.pathname.slice(1);
 
+	// To register active state for the root, "/"
+	if(current_page === ""){
+		current_page = "index.html";
+	}
+
+	var selector = '#menu-normal a[href*="' + current_page + '"]';
 	$(selector).addClass('active');
 	$('#menu-mobile a[href*="' + current_page + '"]').addClass('active');
 });
