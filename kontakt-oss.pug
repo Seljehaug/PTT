@@ -33,6 +33,34 @@ html(lang="no")
 								h2.contact-box-head Adresse
 								h4.contact-box-subhead Sandvika, Norge
 			.contact-form
+				.grid
+					.grid__col.grid__col--6-of-12
+						form(action='/send-email.php').grid.contact-form
+							.grid__col.grid__col--4-of-12
+								label Ditt navn*
+								br
+								span
+									input(type='text', name='your-name', value='')
+							.grid__col.grid__col--4-of-12
+								label Din email*
+								br
+								span
+									input(type='text', name='your-email', value='')
+							.grid__col.grid__col--4-of-12
+								label Emne
+								br
+								span
+									input(type='text', name='emne', value='')
+							.grid__col.grid__col--12-of-12.contact-your-message
+								label Din beskjed
+								br
+								span
+									textarea(name='your-message', cols='50', rows='10')
+							.grid__col.grid__col--12-of-12
+								input(type='submit', value='Send')
 
+					.grid__col.grid__col--6-of-12.contact-bigtext
+						h2 Kontakt oss!
+						h4 Vi svarer din henvendelse direkte på epost så fort vi kan.
 
 		include includes/footer
