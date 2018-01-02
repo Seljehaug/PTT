@@ -1,12 +1,11 @@
 doctype html
 // TODO 
 // Section1 Appstore/googleplay
-// Section1 Bilde av den faktiske appen
+// Section1 h1 større på typography.sass
+// Section1 Center img når jeg får nytt
 // Section2 Icons på alle tre
 // Section3 Add faktiske screenshots
 // Section4 Fikse button til venstre så den liner opp med andre
-// Section4 Fikse 1000px media så det ikke er padding mellom de 4 elementene
-//
 //
 html(lang="no")
 	head
@@ -17,90 +16,90 @@ html(lang="no")
 	body
 		include includes/menu
 		.inner.margin-top
-			section.content-wrapper.full-width-background.index-section-1
-				.two-cols
-					.index-sec1-text
+			section.content-wrapper.full-width-background.light-blue-background.white-text.intro-section-height 
+				.two-cols.center
+					.center
 						h1 Push-to-talk app
-						p Vi tilbyr en smartere måte å kommunisere med hverandre i en gruppe, unasett hvor du er. Kombiner Walkie-talkie og smarttelefoner.
+						p.margin-top-large Vi tilbyr en smartere måte å kommunisere med hverandre i en gruppe, unasett hvor du er. Kombiner Walkie-talkie og smarttelefoner.
 						a.icon.download-appstore-icon
-					.index-sec1-img
-						img(src="img/iphone.png")
-			section.content-wrapper.full-width-background.index-section-2
+					.center.test
+						img.image(src="img/iphone6_black2.png")
+			section.content-wrapper
 				.three-cols
-					.index-sec2-content.center
+					.center
 						h3 Vår Løsning
 						p Radiokommunikasjon med mobiltelefonen, "Push-to-Talk" eller Walike Talkie på mobilen. Uansett navn dette er et effektivt, trygt og kostnadseffektivt alternativ til tradisjonell 2-veis radio.
-					.index-sec2-content.center
+					.center
 						h3 Mobiltelefon
 						p GroupTalks "push to talk-løsning" vil fungere på Android-enheter fra versjon 4.2, Iphone IOS versjon 6 og senere. Vi skjønner imidlertid at for mange av våre brukere er behovet for tilbehør avgjørende for en effektiv løsning.
-					.index-sec2-content.center
+					.center
 						h3 Alarm
 						p Hvis du trenger tyverialarm, personlig alarm eller utgangsalarm, med sms opptil 500 telefonnumre, er det mulig å implementere det i appen. Alarmenes navn vil bli vist, og hans posisjon vil bli vist i GoogleMaps
 			hr.hr-style
-			section.content-wrapper.full-width-background.index-section-3
-				h1 Bilder fra vår app
-				.three-cols.center
-					.index-sec3-content
+			section.content-wrapper.center
+				h2.margin-bottom-medium Bilder fra vår app
+				.three-cols.center.margin-top-bottom-large
+					div
 						img(src="img/placeholder360x640.jpg")
-					.index-sec3-content
+					div
 						img(src="img/placeholder360x640.jpg")
-					.index-sec3-content
+					div
 						img(src="img/placeholder360x640.jpg")
 					
-			section.content-wrapper.full-width-background.index-section-4
+			section.content-wrapper.full-width-background.light-gray-background
 				.four-cols.center
-					.index-sec4-content
+					.package-boxes
 						h3 Pakke 1
 						p
-							span.index-sec4-currency Nok
-							span.index-sec4-number 5
+							span.package-currency Nok
+							span.package-number 5
 							span /dag
 						p 1 gruppe
 						p 3 brukere
 						p 100,- oppstart
-						a.index-sec4-kontaktoss(href="kontakt-oss.html") Kontakt oss
-					.index-sec4-content
+						a.package-button.light-blue-background(href="kontakt-oss.html") Kontakt oss
+					.package-boxes
 						h3 Pakke 2
 						p
-							span.index-sec4-currency Nok
-							span.index-sec4-number 25
+							span.package-currency Nok
+							span.package-number 25
 							span /dag
 						p 1 gruppe
 						p 5 brukere
 						p 3 valgfrie tilbehør
 						p 2500 oppstart ,-
-						a.index-sec4-kontaktoss(href="kontakt-oss.html") Kontakt oss
-					.index-sec4-content
+						a.package-button.light-blue-background(href="kontakt-oss.html") Kontakt oss
+					.package-boxes
 						h3 Pakke 3
 						p
-							span.index-sec4-currency Nok
-							span.index-sec4-number 150
+							span.package-currency Nok
+							span.package-number 150
 							span /mnd
 						p 2 grupper
 						p 10 brukere
 						p 5 valfrie tilbehør
 						p 3500,- oppstart
-						a.index-sec4-kontaktoss(href="kontakt-oss.html") Kontakt oss
-					.index-sec4-content.center
+						a.package-button.light-blue-background(href="kontakt-oss.html") Kontakt oss
+					.package-boxes
 						h3 Pakke 4
 						p
-							span.index-sec4-currency Nok
-							span.index-sec4-number 500
+							span.package-currency Nok
+							span.package-number 500
 							span /mnd
 						p Ubegrensede antall grupper
 						p 150 brukere
 						p 10 valgfrie tilbehør
 						p 5000,- oppstart
-						a.index-sec4-kontaktoss(href="kontakt-oss.html") Kontakt oss
+						a.package-button.light-blue-background(href="kontakt-oss.html") Kontakt oss
 
-			section.content-wrapper.full-width-background.index-section-5
+			section.content-wrapper.full-width-background
 				.two-cols.text-left-img-right
-					.index-sec5-text
+					div
 						p.light-blue-text enkelt, skalerbart, mange muligheter
 						h3 Det Moderne Walkie-Talkie Systemet
 						p Vi tilbyr en smartere måte å kommunisere med hverandre i en gruppe, uansett hvor du er. Tidligere var du begrenset til komradio, som krever et utvidet radiosystem til arbeid. Det gir en begrenset funksjonalitet. Med vår Push To Talk-teknologi bruker du i stedet mobiltelefonen din og kommuniserer over det eksisterende mobilnettet. Det er både en trygg og svært kostnadseffektiv løsning. I tillegg kan du koble en «vanlig» komradio eller datamaskin til gruppesamtalen.
 						p Bare trykk for å snakke.
-					.index-sec5-img
+					.center
 						img(src="img/entrepenor.jpg")
 						
 

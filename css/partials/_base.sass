@@ -18,22 +18,7 @@ img
     border: 0
     height: 1px
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
-
-.light-blue-text
-    color: $light-blue
-
-// Skal stemme overens med høyden til nav i menyen
-.margin-top
-    margin-top: 80px
-
-@media(max-width: 700px)
-	.margin-top
-		margin-top: 60px
-
-section:last-child
-    padding-bottom: 2rem
-
-//For making background full width and reapplying inner for next div (Requires a wrapper div as child)
+    margin: 4rem 0 1rem 0
 
 .full-width-background
     width: 100vw
@@ -44,6 +29,51 @@ section:last-child
         max-width: 1200px
         margin: 0 auto
         padding: 0
+//liker ikke navnet, bare å endre det om noen har noe bedre, brukes bare på index sin første section
+.intro-section-height
+    height: 75vh
+
+// --- colors ---
+
+.light-blue-text
+    color: $light-blue
+.white-text
+    color: $white
+.light-blue-background
+    background-color: $light-blue
+.light-gray-background
+    background-color: $light-gray
+
+// end of _colors
+
+// Skal stemme overens med høyden til nav i menyen
+.margin-top
+    margin-top: 80px
+
+//Margins
+
+.margin-top-large
+    margin-top: 5rem
+.margin-bottom-medium
+    margin-bottom: 3rem
+    font-weight: 400
+.margin-top-bottom-medium
+    margin: 3rem 0
+// end of margins1
+
+
+@media(max-width: 700px)
+	.margin-top
+		margin-top: 60px
+
+section:last-child
+    padding-bottom: 2rem
+
+@media(max-width: 750px)
+    .remove-at-750
+        display: none
+//For making background full width and reapplying inner for next div (Requires a wrapper div as child)
+
 
 // --- two-cols ---
 .two-cols
@@ -86,11 +116,11 @@ section:last-child
 	flex-wrap: wrap
 	justify-content: space-between
 	> div
-		width: 25%
+		width: 24%
 
 @media(max-width: 1000px)
 	.four-cols > div
-		width: 50%
+		width: 46%
 	.four-cols:nth-child(-n+2)
         padding-bottom: 0
 
@@ -164,3 +194,35 @@ section:last-child
 			.toggle-panel-icon
 				background-image: url("../img/icons/arrow-right-black.svg")
 // end of collapsible-panels-list
+
+
+//  --- package-boxes ---
+.package-boxes
+    margin: 1.2rem 0 3rem 0
+    background-color: $white
+    padding: 3rem 0
+
+    outline: 0.5px solid lighten($gray, 70%)
+    > h3
+        color: $light-blue
+
+.package-currency
+    position: relative
+    bottom: 2.1rem
+
+.package-number
+    font-size: 4rem
+
+.package-button
+    align-self: flex-end
+    display: block
+    background-color: $light-blue
+    color: $white
+    text-decoration: none
+    margin: auto
+    margin-top: 1rem
+    margin-bottom: -1rem
+    width: 7rem
+    padding: .8rem 0
+    border-radius: .3rem
+//end of package-boxes
