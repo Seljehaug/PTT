@@ -124,4 +124,12 @@ section:last-child
 			color: $white
 			.toggle-panel-icon
 				background-image: url("../img/icons/arrow-down-offwhite.svg")
+
+	// Fix for hover state sticking on mobile until clicking elsewhere
+	.panel.mobile-hover-fix
+		.panel-header
+			background: $light-gray
+			color: $gray
+			.toggle-panel-icon
+				background-image: url("../img/icons/arrow-right-black.svg")
 // end of collapsible-panels-list
