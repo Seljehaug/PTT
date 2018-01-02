@@ -4,6 +4,7 @@ html(lang="no")
 		title Kontakt Oss
 		include includes/meta
 		// Ekstra ting her
+		script(src="js/form-validation.js")
 
 	body
 		include includes/menu
@@ -62,5 +63,23 @@ html(lang="no")
 					.grid__col.grid__col--6-of-12.contact-bigtext
 						h2 Kontakt oss!
 						h4 Vi svarer din henvendelse direkte på epost så fort vi kan.
+						
+			// Eksempel for form validering
+			form(method="post", action="#", enctype="multipart/form-data").validate
+				.required
+					input.name(type="text" placeholder="Navn")
+				.required
+					input.phone(type="tel" placeholder="Telefon")
+				.required
+					input.email(type="email" placeholder="Epost")
+				.checkboxes
+					p Ønsker info om 
+					input(type="checkbox" id="private-market" name="private-market")
+					label(for="private-market") Privatmarked
+					input(type="checkbox" id="commercial-market" name="commercial-market")
+					label(for="commercial-market") Bedriftsmarked
+				.required
+					textarea
+				input(type="submit" value="Send")
 
 		include includes/footer
