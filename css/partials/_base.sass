@@ -14,6 +14,14 @@ img
     padding: 2rem 0 0
     overflow: hidden
 
+.hr-style
+    border: 0
+    height: 1px
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0))
+
+.light-blue-text
+    color: $light-blue
+
 // Skal stemme overens med høyden til nav i menyen
 .margin-top
     margin-top: 80px
@@ -25,7 +33,7 @@ img
 section:last-child
     padding-bottom: 2rem
 
-//For making background full width while still maintaining inner for content. (Requires a div inside the class)
+//For making background full width and reapplying inner for next div (Requires a wrapper div as child)
 
 .full-width-background
     width: 100vw
@@ -70,6 +78,29 @@ section:last-child
 		&:last-child
 			padding-bottom: 0
 // end of three-cols
+
+// --- four-cols ---
+.four-cols
+	width: 100%
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	> div
+		width: 25%
+
+@media(max-width: 1000px)
+	.four-cols > div
+		width: 50%
+	.four-cols:nth-child(-n+2)
+        padding-bottom: 0
+
+@media(max-width: 750px)
+	.four-cols > div
+		width: 100%
+		padding-bottom: 2rem
+
+
+// end of four-cols
 
 // --- text-left-img-right ---
 @media(max-width: 900px)
