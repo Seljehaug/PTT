@@ -1,0 +1,75 @@
+.index-featured
+	background: $light-blue
+	color: $white
+	padding-top: 3rem
+	padding-bottom: 3rem
+
+	.inner
+		display: flex
+		justify-content: space-between
+
+	h1
+		font-size: 4rem
+		margin-bottom: 4rem
+
+	.download-links
+		display: flex
+		a:first-of-type
+			margin-right: 1rem
+	.download-appstore-icon
+		width: 150px
+		height: 50px
+		display: block
+
+	.text-content
+		width: 50%
+
+	p
+		max-width: 450px
+		margin-bottom: 4rem
+
+	.img-wrapper
+		width: 40%
+
+@media(max-width: 1100px)
+	.index-featured
+		h1, p
+		 	margin-bottom: 2rem
+		.text-content
+			width: 60%
+		.img-wrapper
+			width: 35%
+
+@media(max-width: 950px)
+	.index-featured
+		h1
+			font-size: 3rem
+
+@media(max-width: 750px)
+	.index-featured
+		text-align: center
+		.text-content
+			width: 100%
+		p
+			margin-left: auto
+			margin-right: auto
+		.download-links
+			justify-content: center
+		.img-wrapper
+			display: none
+
+@media(max-width: 450px)
+	.index-featured
+		h1
+			font-size: 2.5rem
+		.download-appstore-icon
+			width: 120px
+			height: 40px
+
+@media(max-width: 350px)
+	.index-featured
+		h1
+			font-size: 2.35rem
+		.download-appstore-icon
+			width: 120px
+			height: 40px
