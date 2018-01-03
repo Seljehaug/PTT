@@ -51,22 +51,37 @@ img
     margin-top: 80px
 
 //Margins
-
 .margin-top-large
     margin-top: 5rem
+.margin-top-medium
+	margin-top: 3rem
+.margin-top-small
+	margin-top: 2rem
+
+.margin-bottom-large
+	margin-bottom: 5rem
 .margin-bottom-medium
     margin-bottom: 3rem
-    font-weight: 400
+.margin-bottom-small
+	margin-bottom: 2rem
+
+.margin-top-bottom-large
+	margin-top: 5rem
+	margin-bottom: 5rem
 .margin-top-bottom-medium
-    margin: 3rem 0
-// end of margins1
+	margin-top: 3rem
+	margin-bottom: 3rem
+.margin-top-bottom-small
+	margin-top: 2rem
+	margin-bottom: 2rem
+// end of margins
 
 
 @media(max-width: 700px)
 	.margin-top
 		margin-top: 60px
 
-section:last-child
+section:last-of-type
     padding-bottom: 2rem
 
 @media(max-width: 750px)
@@ -77,7 +92,7 @@ section:last-child
 
 // --- two-cols ---
 .two-cols
-	width: 100%
+	// width: 100%
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
@@ -92,7 +107,7 @@ section:last-child
 
 // --- three-cols ---
 .three-cols
-	width: 100%
+	// width: 100%
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
@@ -111,7 +126,7 @@ section:last-child
 
 // --- four-cols ---
 .four-cols
-	width: 100%
+	// width: 100%
 	display: flex
 	flex-wrap: wrap
 	justify-content: space-between
@@ -119,15 +134,19 @@ section:last-child
 		width: 24%
 
 @media(max-width: 1000px)
-	.four-cols > div
-		width: 46%
-	.four-cols:nth-child(-n+2)
-        padding-bottom: 0
+	.four-cols
+		> div
+			width: 48%
+		div:nth-child(1), div:nth-child(2)
+			margin-bottom: 2rem
 
-@media(max-width: 750px)
-	.four-cols > div
-		width: 100%
-		padding-bottom: 2rem
+@media(max-width: 600px)
+	.four-cols
+		> div
+			width: 100%
+			margin-bottom: 2rem
+		div:last-child
+			margin-bottom: 0
 
 
 // end of four-cols
@@ -138,7 +157,7 @@ section:last-child
 		div
 			width: 100%
 		div:first-child
-			margin-bottom: 1rem
+			margin-bottom: 2rem
 // end of text-left-img-right
 
 // --- Collapsible panels list ---
@@ -155,6 +174,8 @@ section:last-child
 
 				.toggle-panel-icon
 					background-image: url("../img/icons/arrow-right-offwhite.svg")
+	.panel:last-child
+		margin-bottom: 0
 	.panel-header
 		padding: 1rem
 		display: flex
@@ -195,16 +216,21 @@ section:last-child
 				background-image: url("../img/icons/arrow-right-black.svg")
 // end of collapsible-panels-list
 
+//  --- package ---
+.package
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin: 0
+	background: $white
+	padding: 3rem 0
 
-//  --- package-boxes ---
-.package-boxes
-    margin: 1.2rem 0 3rem 0
-    background-color: $white
-    padding: 3rem 0
+	outline: 0.5px solid lighten($gray, 70%)
+	h3
+		color: $light-blue
 
-    outline: 0.5px solid lighten($gray, 70%)
-    > h3
-        color: $light-blue
+.package-info
+	margin-bottom: 1rem
 
 .package-currency
     position: relative
@@ -214,21 +240,14 @@ section:last-child
     font-size: 4rem
 
 .package-button
-    align-self: flex-end
-    display: block
-    background-color: $light-blue
-    color: $white
-    text-decoration: none
-    margin: auto
-    margin-top: 1rem
-    margin-bottom: -1rem
-    width: 7rem
-    padding: .8rem 0
-    border-radius: .3rem
-//end of package-boxes
-
-.test
-    width: 40%
+	margin-top: auto
+	display: block
+	background: $light-blue
+	color: $white
+	text-decoration: none
+	padding: 0.6rem 1.2rem
+	border-radius: 0.3rem
+//end of package
 
 // Form validation
 .field_invalid
