@@ -9,32 +9,38 @@ html(lang="no")
 	body
 		include includes/menu
 
-		.contact-container
-			.contact-boxes
+		.inner.margin-top
+			.margin-top
 				.grid
 					.grid__col.grid__col--4-of-12
 						.contact-box
-							.contact-icon-box
-								i.fa.fa-phone.contact-icon
-							.contact-box-text
-								h2.contact-box-head Ring oss
-								h4.contact-box-subhead +47 976 56 976
+							.card
+								.card-icon
+									i.fa.fa-phone.fa-5x
+								.card-container
+									h4
+										b Telefon
+									p 976 56 976
 					.grid__col.grid__col--4-of-12
 						.contact-box
-							.contact-icon-box
-								i.fa.fa-envelope.contact-icon
-							.contact-box-text
-								h2.contact-box-head E-mail
-								h4.contact-box-subhead johannes@pttcommunication.com
+							.card
+								.card-icon
+									i.fa.fa-envelope.fa-5x
+								.card-container
+									h4
+										b E-mail
+									p johannes@pttcommunication.com
 					.grid__col.grid__col--4-of-12
 						.contact-box
-							.contact-icon-box
-								i.fa.fa-home.contact-icon
-							.contact-box-text
-								h2.contact-box-head Adresse
-								h4.contact-box-subhead Sandvika, Norge
-			.contact-form
-				.grid
+							.card
+								.card-icon
+									i.fa.fa-home.fa-5x
+								.card-container
+									h4
+										b Adresse
+									p Sandvika, Norge
+			.contact-form.margin-top
+				.grid.light-blue-back
 					.grid__col.grid__col--6-of-12
 						form(action='/send-email.php').grid.contact-form
 							.grid__col.grid__col--4-of-12
@@ -56,15 +62,18 @@ html(lang="no")
 								label Din beskjed
 								br
 								span
-									textarea(name='your-message', cols='50', rows='10')
+									textarea(name='your-message', autofocus, cols='50', rows='10')
 							.grid__col.grid__col--12-of-12
-								input(type='submit', value='Send')
+								input.submit-button(type='submit', value='Send')
 
-					.grid__col.grid__col--6-of-12.contact-bigtext
+					.grid__col.grid__col--6-of-12.center.contact-your-message
 						h2 Kontakt oss!
 						h4 Vi svarer din henvendelse direkte på epost så fort vi kan.
-						
-			// Eksempel for form validering
+
+
+
+
+		// Eksempel for form validering
 			form(method="post", action="#", enctype="multipart/form-data").validate
 				.required
 					input.name(type="text" placeholder="Navn")
@@ -73,7 +82,7 @@ html(lang="no")
 				.required
 					input.email(type="email" placeholder="Epost")
 				.checkboxes
-					p Ønsker info om 
+					p Ønsker info om
 					input(type="checkbox" id="private-market" name="private-market")
 					label(for="private-market") Privatmarked
 					input(type="checkbox" id="commercial-market" name="commercial-market")

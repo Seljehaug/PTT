@@ -1,46 +1,45 @@
-.contact-container
-    max-width: 1200px
-    margin: auto
-    margin-top: 100px
-    padding-top: 30px
-    padding-bottom: 30px
-
-.contact-boxes
-    margin-bottom: 50px
-
-.contact-box
-    width: 100%
-    height: 150px
-
-.contact-box-text
-    border: 1px solid black
-
-.contact-box-head,
-.contact-box-subhead
-    text-align: center
-
-.contact-icon-box
-    width: 85px
-    height: 85px
-    line-height: 85px
-    font-size: 42px
-    background: $light-blue
-    border-radius: 50%
-    margin: auto
-    position: relative
-    color: $white
-    text-align: center
-    z-index: 99
-
-.contact-icon
-    text-align: center
-    position: relative
-
+// Kontaktskjema
 .contact-form
     padding-top: 30px
+    padding-bottom: 30px
+    textarea
+        width: 99%
+    .submit-button
+        border: 1px solid $gray
+        padding: 5px
+        margin-top: 10px
 
 .contact-your-message
     padding-top: 30px
 
-.contact-bigtext
+.light-blue-back
+    background-color: lighten( $light-blue, 40% )
+
+// Kort
+.contact-box
+    margin: auto
     text-align: center
+    .card
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+        transition: 0.3s
+        border-radius: 5px
+        text-align: center
+        padding: 25px 5px 5px 5px
+        margin-top: 15px
+        width: 75%
+        min-width: 290px
+        &:hover
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+        .card-container
+                padding: 2px 16px
+        .card-icon
+            background-color: $light-blue
+            width: 75%
+            height: 150px
+            dsiplay: block
+            color: $white
+            display: inline-block
+            text-align: center
+            margin: 20px 0px 20px 0px
+            i
+                margin-top: 35px
