@@ -2,18 +2,22 @@
 .contact-form
     padding-top: 30px
     padding-bottom: 30px
+    input[type="text"],
+    input[type="email"],
     textarea
-        width: 99%
+        width: 100%
+        border: 1px solid $dark-blue
     .submit-button
         border: 1px solid $gray
         padding: 5px
         margin-top: 10px
+    .contact-your-message
+        padding-left: 20px
+        padding-top: 20px
 
 .left-margin-0
     margin-left: 0px
-
-.contact-your-message
-    padding: 30px
+    border-radius: 5px
 
 .contact-message
     padding-left: 30px
@@ -41,11 +45,14 @@
         margin-top: 15px
         width: 75%
         min-width: 290px
+        margin: auto
+        margin-top: 30px
         &:hover
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
         .card-container
                 padding: 2px 16px
         .card-icon
+            border-radius: 5px
             background-color: $light-blue
             width: 75%
             height: 150px

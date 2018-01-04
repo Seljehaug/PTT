@@ -42,26 +42,26 @@ html(lang="no")
 			.contact-form.margin30-top
 				.grid.light-blue-back.left-margin-0
 					.grid__col.grid__col--8-of-12
-						form(action='/send-email.php').grid.contact-form
+						form(method="post", action='#', enctype="multipart/form-data").grid.contact-form.validate
 							.grid__col.grid__col--4-of-12
-								label Ditt navn*
+								label Ditt navn
 								br
-								span
-									input(type='text', name='your-name', value='')
+								span.required
+									input(type="text", name='name')
 							.grid__col.grid__col--4-of-12
-								label Din email*
+								label Din email
 								br
-								span
-									input(type='text', name='your-email', value='')
+								span.required
+									input(type='email', name='email')
 							.grid__col.grid__col--4-of-12
 								label Emne
 								br
-								span
-									input(type='text', name='emne', value='')
+								span.required
+									input(type='text', name='emne')
 							.grid__col.grid__col--12-of-12.contact-your-message
 								label Din beskjed
 								br
-								span
+								span.required
 									textarea(name='your-message', autofocus, cols='50', rows='10')
 							.grid__col.grid__col--12-of-12
 								input.submit-button(type='submit', value='Send')
@@ -73,7 +73,7 @@ html(lang="no")
 
 
 
-		// Eksempel for form validering
+		//Eksempel for form validering
 			form(method="post", action="#", enctype="multipart/form-data").validate
 				.required
 					input.name(type="text" placeholder="Navn")

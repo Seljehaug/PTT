@@ -29,11 +29,11 @@ function validateForm($formObj) {
 		});
 	});
 	if (valid === 1) {
-    	// 	console.log("VALID: Submit");
+    	 	console.log("VALID: Submit");
 		$formObj.attr("action", $formObj.attr("action") + '#' + $formObj.closest('.page').attr('id'));
 		$formObj.submit();
 	} else {
-		// console.log("NOT VALID");
+		 console.log("NOT VALID");
   }
 }
 
